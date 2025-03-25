@@ -1,4 +1,5 @@
 import './App.css'
+import { Timer } from '@/components'
 
 function App() {
   return (
@@ -7,8 +8,7 @@ function App() {
         <h1>ポモドーロタイマー</h1>
       </header>
       <main className="app-main">
-        <p>ポモドーロタイマーアプリケーションへようこそ！</p>
-        <p>このアプリは開発中です。</p>
+        <Timer />
       </main>
       <footer className="app-footer">
         <p>&copy; 2025 ポモドーロタイマー</p>
