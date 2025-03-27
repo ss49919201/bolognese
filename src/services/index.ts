@@ -1,3 +1,4 @@
+export * from './event'
 export * from './notification'
 export * from './stats'
 export * from './storage'
