@@ -1,0 +1,131 @@
+/* タイマー全体のスタイル */
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* タイマー表示のスタイル */
+.timer-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.timer-pomodoro {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--danger-color);
+}
+
+.timer-short-break {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--success-color);
+}
+
+.timer-long-break {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: var(--primary-color);
+}
+
+.timer-type {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.timer-time {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: monospace;
+  margin: 1rem 0;
+}
+
+.timer-session {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* タイマーコントロールのスタイル */
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.timer-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+.start-button {
+  background-color: var(--success-color);
+}
+
+.start-button:hover {
+  background-color: #218838;
+}
+
+.pause-button {
+  background-color: var(--warning-color);
+  color: #212529;
+}
+
+.pause-button:hover {
+  background-color: #e0a800;
+}
+
+.reset-button {
+  background-color: var(--danger-color);
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+}
+
+.reset-button:disabled {
+  background-color: #dc354580;
+  cursor: not-allowed;
+}
+
+.skip-button {
+  background-color: var(--info-color);
+}
+
+.skip-button:hover {
+  background-color: #138496;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 576px) {
+  .timer {
+    padding: 1rem;
+  }
+
+  .timer-time {
+    font-size: 3rem;
+  }
+
+  .timer-controls {
+    flex-wrap: wrap;
+  }
+
+  .timer-button {
+    flex: 1 0 40%;
+    margin-bottom: 0.5rem;
+  }
+}
